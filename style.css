@@ -1,0 +1,58 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenitore{
+    width: 300px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+   
+}
+
+.foto-albero{
+    width:100% ;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btnsave{
+    color: white;
+    background-color: red;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    opacity: 0;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.contenitore:hover .btnsave{
+    opacity: 1;
+}
+
+.btninferiore{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 30px;
+}
+
+.btninferiore div{
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 20px;
+    opacity: 0;
+}
+
+div.relink{
+    padding: 10px 15px ;
+}
+
+.contenitore:hover .btninferiore div{
+    opacity: 1;
+}
